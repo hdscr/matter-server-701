@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Holger Home Assistant repository
+url: 'https://github.com/hdscr/matter-server-701'
+maintainer: Awesome Holger
