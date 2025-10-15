@@ -1,0 +1,22 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Matter Server 7.0.1
+version: "7.0.1"
+slug: matter_server_701
+description: Pinned Matter Server (python-matter-server) v7.0.1
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: services
+boot: auto
+webui: http://[HOST]:[PORT:5580]
+ports: { "5580/tcp": 5580 }
+map:
+  - data:rw
+image: "ghcr.io/home-assistant-libs/python-matter-server:7.0.1"
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
